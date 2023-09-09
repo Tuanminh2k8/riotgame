@@ -84,6 +84,7 @@ a {
   position: absolute;
   width: 145px;
   height: 145px;
+  font-size: 15px;
   border-top: 5px solid var(--button-color);
 }
 
@@ -97,18 +98,22 @@ a {
 #block-2 {
   position: relative;
 }
-#block-2::before {
-  content: "";
-  top: 60px;
+#block-2 .box-1 {
   left: 0;
   background-color: var(--header-color);
   display: none;
   position: absolute;
   width: 220px;
-  height: 220px;
+  height: 145px;
+  font-size: 15px;
+  margin-bottom: 15px;
   border-top: 5px solid var(--button-color);
 }
-#block-2:hover::before {
+#block-2 .box-1 ul li {
+  padding: 0.6rem 1rem;
+  display: flex;
+}
+#block-2:hover .box-1 {
   display: flex;
 }
 #block-3 {
@@ -116,8 +121,12 @@ a {
 }
 #block-3::before {
   content: "";
+  top: 0;
+  left: 0;
   display: none;
   position: absolute;
+  width: 0;
+  height: 0;
   border-top: 5px solid var(--button-color);
 }
 #block-3:hover::before {
@@ -170,7 +179,6 @@ h2 {
 .butting-3 {
   border-radius: 6.5px;
   display: inline-block;
-
   padding: 9px 25px;
 }
 .banner-main {
@@ -184,6 +192,9 @@ h2 {
   border-radius: 20px;
   margin-right: 20px;
   position: relative;
+}
+.boc img {
+  height: 400px;
 }
 .banner-left {
   flex: 1;
@@ -228,12 +239,116 @@ h2 {
 }
 .header-main-2 {
   font-size: 3rem;
+  margin-top: 50px;
 }
-.main-2 .item {
+
+/* warp-item */
+.main-2 .item-0 {
   background-image: url(/img/lolkv-2023.png);
 }
 .main-2 .item-1 {
-  background-image: url(/img/);
+  background-image: url(/img/val7-act-1.png);
 }
-@media screen {
+.main-2 .item-2 {
+  background-image: url(/img/riotgames-com-tft-set9.png);
+}
+.main-2 .item-3 {
+  background-image: url(/img/wrka-2023.png);
+}
+.main-2 .item-4 {
+  background-image: url(/img/riotgames-com-legendsofruneterra-2023.png);
+}
+.warp-item {
+  margin-top: 50px;
+}
+.Esports {
+  margin-top: 50px;
+}
+.Esports h1 {
+  margin-bottom: 70px;
+  font-size: 3rem;
+}
+.Esports img {
+  margin-right: 30px;
+  border-radius: 15px;
+  width: 550px;
+}
+.Entertainment {
+  margin-top: 50px;
+}
+.Entertainment h1 {
+  margin-bottom: 70px;
+  font-size: 48px;
+}
+.Entertainment img {
+  margin-right: 30px;
+  border-radius: 15px;
+  width: 550px;
+}
+.Riot-Forge {
+  margin-top: 50px;
+}
+.Riot-Forge h1 {
+  margin-bottom: 70px;
+  font-size: 3rem;
+}
+.Riot-Forge img {
+  margin-right: 20px;
+  border-radius: 15px;
+  width: 350px;
+}
+.careers {
+  margin-top: 150px;
+  background-color: #2b2a29;
+  text-align: center;
+  display: flex;
+}
+.careers-content h1 {
+  font-size: 3.5rem;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.careers-content p {
+  font-size: 1.25rem;
+  color: #656462;
+  margin: 0 auto 2.5rem;
+  font-weight: 600;
+  max-width: 450px;
+}
+.careers-img {
+  z-index: 90;
+  width: 150px;
+}
+.careers-jobs {
+  background-color: rgba(173, 172, 170, 0.2);
+}
+.careers-jobs span {
+}
+
+/* larga screens and desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header-left-center {
+    gap: 10px;
+    /* display: none; */
+    display: block;
+  }
+  .header-left-two {
+    gap: 10px;
+  }
+  .header-left {
+    gap: 5px;
+  }
+  .header-right {
+    gap: 10px;
+  }
+  .searh {
+    width: 40 px;
+  }
+}
+/* laptop and small */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-left-center {
+    font-size: 15px;
+    gap: 10px;
+  }
 }
