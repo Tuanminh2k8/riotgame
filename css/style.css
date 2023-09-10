@@ -243,6 +243,9 @@ h2 {
 }
 
 /* warp-item */
+.grid {
+  width: 100px;
+}
 .main-2 .item-0 {
   background-image: url(/img/lolkv-2023.png);
 }
@@ -297,6 +300,13 @@ h2 {
   border-radius: 15px;
   width: 350px;
 }
+.background-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url(/img/annie.jpg);
+  background-size: cover;
+}
 .careers {
   margin-top: 150px;
   background-color: #2b2a29;
@@ -304,9 +314,10 @@ h2 {
   display: flex;
 }
 .careers-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   margin-top: 70px;
   margin-bottom: 20px;
+  max-width: 490px;
 }
 .careers-content p {
   font-size: 1.25rem;
@@ -320,11 +331,65 @@ h2 {
   width: 150px;
 }
 .careers-jobs {
-  background-color: rgba(173, 172, 170, 0.2);
+  display: flex;
+  flex: 1 1 260px;
+  border-radius: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.careers-jobs h2 {
+  font-size: 1.55rem;
+  color: #656462;
 }
 .careers-jobs span {
+  font-size: 3.5rem;
 }
-
+.careers-jobs-1 {
+  background-color: rgba(173, 172, 170, 0.2);
+  padding: 20px;
+}
+.careers-jobs-2 {
+  background-color: rgba(173, 172, 170, 0.2);
+  margin-right: 40px;
+  padding: 20px;
+}
+.background-2 {
+  margin-top: 100px;
+  width: 100%;
+  height: 120vh;
+  background-image: url(../img/annie.jpg);
+}
+.sign-in {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 22px 16px;
+  color: #f9f9f9;
+  display: inline-block;
+}
+.sign-in button {
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  background-color: #d1363a;
+}
+.logy {
+  display: flex;
+}
+.item-zero {
+  align-items: center;
+  /* margin: 0;
+  padding: 0; */
+}
+.item-zero ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 /* larga screens and desktops */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .header-left-center {
